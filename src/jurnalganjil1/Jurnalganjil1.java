@@ -13,6 +13,7 @@ public class Jurnalganjil1 {
     private int awal=0;
     private int tambahan=1;
     private int fibonacci;
+    private int jumlah;
     private List<Integer> list=new ArrayList<Integer>();
     
      public Fibonacci(){
@@ -26,8 +27,8 @@ public class Jurnalganjil1 {
             fibonacci=tambahan+awal;
             awal=tambahan;
             tambahan=fibonacci;
-            
-            list.add(fibonacci);
+            jumlah=fibonacci++;
+            list.add(jumlah);
         }
         
         return list;
@@ -40,8 +41,8 @@ public class Jurnalganjil1 {
         Jurnalganjil1 fibonacci=new Jurnalganjil1();
         List<Integer> list=fibonacci.getFibonacci(in);
         
-        for(Integer i:list){
-            System.out.print(i+", ");
+        for(Integer jumlah:list){
+            System.out.print(jumlah+", ");
         }
     }
     
